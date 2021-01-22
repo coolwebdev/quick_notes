@@ -27,10 +27,7 @@ const useWindowWidth = () => {
   return width
 }
 
-const Responsive = ({
-                      columnsCountBreakPoints,
-                      children
-                    }) => {
+const Responsive = ({columnsCountBreakPoints, children}) => {
   const windowWidth = useWindowWidth()
   const columnsCount = useMemo(() => {
     const breakPoints = Object.keys(columnsCountBreakPoints).sort(
@@ -55,7 +52,7 @@ const Responsive = ({
       {React.Children.map(children, (child, index) =>
         React.cloneElement(child, {
           key: index,
-          columnsCount: columnsCount
+          columnsCount: columnsCount,
         })
       )}
     </div>
@@ -65,10 +62,10 @@ const Responsive = ({
 Responsive.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node
+    PropTypes.node,
   ]).isRequired,
   columnsCountBreakPoints: PropTypes.object,
-  style: PropTypes.string
+  style: PropTypes.string,
 }
 
 Responsive.defaultProps = {
@@ -77,10 +74,10 @@ Responsive.defaultProps = {
     544: 2,
     768: 3,
     992: 4,
-    1200: 5
+    // 1200: 5
   },
   className: null,
-  style: null
+  style: null,
 }
 
 export default Responsive

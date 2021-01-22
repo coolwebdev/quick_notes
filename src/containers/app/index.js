@@ -1,10 +1,12 @@
 import React, {useState, useEffect, useRef} from 'react'
 
 import GlobalStyles from '../../global-styles'
-import Wrapper from './Wrapper'
-import AppHeader from './AppHeader'
+import Wrapper from 'containers/app/Wrapper'
+import AppHeader from 'containers/app/AppHeader'
 import NoteEditor from 'components/noteEditor'
 import NotesGrid from 'components/notesGrid'
+import Footer from 'components/footer'
+import MainSection from 'containers/app/MainSection'
 
 const App = () => {
   const [notes, setNotes] = useState([])
@@ -45,8 +47,11 @@ const App = () => {
   return (
     <Wrapper>
       <AppHeader>Notes App</AppHeader>
-      <NoteEditor onNoteAdd={handleNoteAdd} />
-      <NotesGrid notes={notes} onNoteDelete={handleNoteDelete} />
+      <MainSection>
+        <NoteEditor onNoteAdd={handleNoteAdd} />
+        <NotesGrid notes={notes} onNoteDelete={handleNoteDelete} />
+      </MainSection>
+      <Footer />
       <GlobalStyles />
     </Wrapper>
   )

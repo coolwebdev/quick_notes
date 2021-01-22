@@ -5,7 +5,6 @@ const Wrapper = styled.div`
   display: block;
   width: 200px;
   height: auto;
-  //float: left;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   border-radius: 2px;
   padding: 10px;
@@ -21,7 +20,7 @@ const Wrapper = styled.div`
 
   span {
     position: absolute;
-    line-height: .6em;
+    line-height: 0.6em;
     top: 5px;
     right: 5px;
     display: none;
@@ -32,7 +31,6 @@ const Wrapper = styled.div`
   :hover span {
     display: block;
   }
-
 `
 
 export default Wrapper

@@ -1,6 +1,10 @@
 import {createGlobalStyle} from 'styled-components'
 
 const GlobalStyles = createGlobalStyle`
+  * {
+    box-sizing: border-box;
+  }
+  
   html,
   body {
     height: 100%;
@@ -12,7 +16,7 @@ const GlobalStyles = createGlobalStyle`
     sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: #eaeaea;
+    //background-color: #eaeaea;
     align-items: center;
   }
 `

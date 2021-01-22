@@ -10,6 +10,10 @@ const Wrapper = styled.div`
   border-radius: 2px;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 576px) {
+    margin: 6px auto;
+  }
 `
 
 export default Wrapper
