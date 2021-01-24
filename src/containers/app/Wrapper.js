@@ -5,7 +5,6 @@ const Wrapper = styled.div`
   width: 100%;
   margin: 0 auto;
   min-height: 100vh;
-  background-color: #eaeaea;
 
   @media (min-width: 544px) {
     max-width: 576px;
@@ -16,7 +15,8 @@ const Wrapper = styled.div`
   }
 
   @media (min-width: 992px) {
-    max-width: 940px;
+    //max-width: 940px;
+    max-width: 880px;
   }
 
   //@media (min-width: 1200px) {

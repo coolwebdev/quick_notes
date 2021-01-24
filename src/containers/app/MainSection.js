@@ -1,13 +1,13 @@
 import styled from 'styled-components'
 
-const marginBottom = 'calc(6em + 1.5em + 1px + 26px)'
-const marginBottomMobile = 'calc(3em + 3em + 1px + 16px)'
+const paddingBottom = 'calc(4em + 1.5em + 1px + 26px)'
+const paddingBottomMobile = 'calc(3em + 3em + 1px + 16px)'
 
 const MainSection = styled.div`
-  padding-bottom: ${marginBottom};
+  padding-bottom: ${paddingBottom};
 
   @media (max-width: 576px) {
-    padding-bottom: ${marginBottomMobile};
+    padding-bottom: ${paddingBottomMobile};
   }
 `
 

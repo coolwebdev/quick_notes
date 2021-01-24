@@ -46,7 +46,7 @@ const App = () => {
 
   return (
     <Wrapper>
-      <AppHeader>Notes App</AppHeader>
+      <AppHeader>Quick Notes</AppHeader>
       <MainSection>
         <NoteEditor onNoteAdd={handleNoteAdd} />
         <NotesGrid notes={notes} onNoteDelete={handleNoteDelete} />

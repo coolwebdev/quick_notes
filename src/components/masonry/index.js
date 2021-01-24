@@ -48,7 +48,7 @@ Masonry.propTypes = {
     PropTypes.node
   ]).isRequired,
   columnsCount: PropTypes.number,
-  style: PropTypes.object
+  // style: PropTypes.object
 }
 
 Masonry.defaultProps = {

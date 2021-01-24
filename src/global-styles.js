@@ -7,8 +7,6 @@ const GlobalStyles = createGlobalStyle`
   
   html,
   body {
-    height: 100%;
-    width: 100%;
     line-height: 1.5;
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -16,7 +14,7 @@ const GlobalStyles = createGlobalStyle`
     sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    //background-color: #eaeaea;
+    background-color: rgb(239 225 206 / 20%);
     align-items: center;
   }
 `

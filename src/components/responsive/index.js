@@ -65,7 +65,6 @@ Responsive.propTypes = {
     PropTypes.node,
   ]).isRequired,
   columnsCountBreakPoints: PropTypes.object,
-  style: PropTypes.string,
 }
 
 Responsive.defaultProps = {
